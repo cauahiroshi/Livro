@@ -1,3 +1,9 @@
+package LivroTeste;
+
+import Livro.Distopia;
+import Livro.FiccaoCientifica;
+import Livro.Livro;
+import Livro.Romance;
 
 public class TestaLivro {
 	public static void main(String[] args) {
