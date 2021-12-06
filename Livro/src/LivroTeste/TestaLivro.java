@@ -8,31 +8,25 @@ import Livro.Romance;
 public class TestaLivro {
 	public static void main(String[] args) {
 
-		Livro romance = new Romance("Don Casmurro");
-		romance.setAutor("Machado de Assis ");
-		romance.setPreco(20.00);
+		Livro romance = new Romance("Don Casmurro", "Machado de Assis", 20.00 );
 		
-		System.out.println(romance.getNomeDoLivro());
-		System.out.println(romance.getAutor());
-		System.out.println(romance.getPreco());
+		System.out.println("Nome da obra: " + romance.getNomeDoLivro());
+		System.out.println("Autor:" + romance.getAutor());
+		System.out.println("Preço:" + romance.getPreco());
 		System.out.println();
 		
-		Livro ficcao = new FiccaoCientifica("O Guia do Mochileiro das Galaxias");
-		ficcao.setAutor("Douglas Adams");
-		ficcao.setPreco(30.00);
-		
-		System.out.println(ficcao.getNomeDoLivro());
-		System.out.println(ficcao.getAutor());
-		System.out.println(ficcao.getPreco());
+		Livro ficcao = new FiccaoCientifica("O Guia do Mochileiro das Galaxias", "Douglas Adams", 30.00);
+
+		System.out.println("Nome da obra: " + ficcao.getNomeDoLivro());
+		System.out.println("Autor:" + ficcao.getAutor());
+		System.out.println("Preço:" + ficcao.getPreco());
 		System.out.println();
 		
-		Livro distopia = new Distopia("Fahrenheit 451");
-		distopia.setAutor("Ray Bradbury");
-		distopia.setPreco(26.99);
+		Livro distopia = new Distopia("Fahrenheit 451", "Ray Bradbury", 27.00);
 		
-		System.out.println(distopia.getNomeDoLivro());
-		System.out.println(distopia.getAutor());
-		System.out.println(distopia.getPreco());
+		System.out.println("Nome da obra: " + distopia.getNomeDoLivro());
+		System.out.println("Autor:" + distopia.getAutor());
+		System.out.println("Preço:" + distopia.getPreco());
 		
 	}
 }
