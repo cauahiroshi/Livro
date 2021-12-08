@@ -6,6 +6,12 @@ public abstract class Livro {
 	private String autor;
 	private double preco;
 	
+	public Livro(String nomeDoLivro, String autor, double preco){
+		this.nomeDoLivro=nomeDoLivro; 
+		this.autor=autor; 
+		this.preco=preco; 
+	}
+	
 	
 	public String getNomeDoLivro() {
 		return nomeDoLivro;
@@ -30,6 +36,5 @@ public abstract class Livro {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	} 
-	
 	
 }
